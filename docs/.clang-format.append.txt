@@ -1,0 +1,1 @@
+EmptyLineBeforeAccessModifier: LogicalBlock

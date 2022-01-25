@@ -1,0 +1,46 @@
+.
+│   .gitignore
+│   .gitmodules     /google_tests/
+│   .clang-format
+│   .gitignore
+│   CMakeLists.txt
+│   README.md       /short project description + building + launching/
+│   ...             /also will be a nice(hell) to add and apply .clang-tidy/
+│
+└───doc/
+│   │   README.md                     /full technical project description/
+│   │   Software_Design_Document.md   /casual overall project description/
+│   │   ...
+│   │
+│   └───resources/
+│       │   flow-concept.png
+│       │   flow.png
+│       │   *.png
+│
+└───src/
+│   │   generate_keys.sh
+│   │   license.proto
+│   │
+│   └───application/
+│   │   │   CMakeLists.txt
+│   │   │   *.cpp
+│   │   │
+│   │   └───include/
+│   │       │   *.hpp
+│   │
+│   └───server/...          /same as application's structure/
+│   └───https_server/...
+│
+└───libs/openssl/
+│        │   CMakeLists.txt
+│        │   ...             /openssl source files (include/*.hpp *.cpp)
+│
+└───tests/...               /source code gtests for libs and apps/
+│
+└───build/                  /appears after building the project/
+    │   application         /executable/
+    │   server              /executable/
+    │   *.cfg               /configuration files for executables(copied here during building)/
+    │   ...
+    │
+    └───objfiles/...    /*.o compilation files (separated for different apps)/

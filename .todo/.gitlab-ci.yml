@@ -1,0 +1,15 @@
+#//! Not an example, just a note
+
+before_script:
+    # Install build dependencies
+    - apt-get -qq update && apt-get -qq install cmake clang cppcheck clang-tidy > /dev/null
+    - cd ..
+    - git clone https://github.com/google/googletest
+    - cd $CI_PROJECT_DIR
+
+intro:
+    # Build and test the application
+    stage: build
+    script:
+        #- echo "Building and Testing"
+        - make
