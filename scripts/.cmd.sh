@@ -1,3 +1,5 @@
+cmake -H. -Bcmake-nix
+cmake --build cmake-nix/
 
 git clone --recurse-submodules
 git clone --recurse # for submodules and "git-childs"
