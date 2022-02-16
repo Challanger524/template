@@ -1,0 +1,5 @@
+[submodule "modules/example-submodule"]
+	path = modules/example-submodule
+	url = https://github.com/githubtraining/example-submodule.git
+	branch = origin/master
+	#update = merge

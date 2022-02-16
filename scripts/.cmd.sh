@@ -1,9 +1,14 @@
 
-git clone --recurse-submodules
-git clone --recurse # for submodules and "git-childs"
-git pull  --recurse-submodules # submodule.recurse в значение true
+# Submodules adding/cloning
+git clone --recurse --shallow-submodules --jobs 4 --depth 24 --branch submodule https://github.com/Challanger524/template.git
+git submodule add --depth 1 --branch master https://github.com/githubtraining/example-submodule.git modules/example-submodule
 
-# Latest git tarball loader
+
+## Misc
+
+# Replace spaces with '_'
+sed -e "s/ /_/g" < a.txt
+# Latest git tarball loader #curl(+redirect), #sed, #wget
 if [ $? != 0 ]; then # generic manual installation (note source)
     echo "'clang-format' and/or 'clang-tidy' not installed :("
     echo "Generically installing llvm+clang on WSL (frak this stuff..)..."
