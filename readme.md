@@ -3,3 +3,10 @@
 This project intended to be a "_shooting range_" for seeking a solid experience of rising a "developmet process/flow" for bigger and more complex projects.
 
 Late ispiration is taken from https://github.com/cpp-best-practices/cpp_starter_project
+
+## Clone & install
+`git clone --recurse --shallow-submodules --jobs 4 --depth 24 --branch main https://github.com/Challanger524/template.git`
+
+> Apply project's *.gitconfig* by:
+> `cd template/; scripts/git-config.sh`
+> Note: if there are a *.gitconfig* near the cloned project - it will be included as a last include.
