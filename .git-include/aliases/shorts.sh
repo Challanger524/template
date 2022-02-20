@@ -4,8 +4,8 @@
 	b  = "branch"
 	bm = "branch --merged"
 	bn = "branch --no-merged"
+	u  = "add --update"
 
 [alias] # named shortcuts
 	aliaslist = "config --local --get-regexp --includes --name-only --show-origin alias" # print included aliases
-	ammend  = "commit --amend"
-	update  = "rebase main" # current brunch from main
+	ammend    = "commit --amend"
