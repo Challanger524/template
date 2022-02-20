@@ -8,7 +8,7 @@
 	submodule-branch-undettach = "!F() { git submodule foreach 'branch=$(git branch --no-column --format=\"%(refname:short)\" --points-at `git rev-parse HEAD` | grep -v \"HEAD detached\" | head -1); if [ ! -z $branch -a -z `git symbolic-ref --short -q HEAD` ]; then git checkout \"$branch\"; fi'; };  F"
 
 [alias] # Rebase to 'main' or 'master' branch
-	update = "!F() { \
+	updatenopull = "!F() { \
 		if [ -f .git/refs/remotes/origin/master ]; then main_old=1; fi; \
 		if [ -f .git/refs/remotes/origin/main ];   then main_new=1; fi; \
 		\
