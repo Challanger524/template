@@ -1,0 +1,22 @@
+; Title: Summary, imperative, start upper case, include #Tags, don't end with a period(dot)
+; Tags : #tmpl(optional-project_abbrev) #Git(#Ignore, #Submodules, #Config, #Aliases) #Doc #Build #Script #VsCode
+; Examp: Add/Fix/Use something within project #proj_abbr #Tag1 #Tag2
+; Body : Blank line after <Title>, more explanation, (if needed) bullets (<space> before <hyphen> or <asterisk>)
+; --- Title-meter -  -  -  - <30 - - - . - - - - <50 ------.---------<70 +     .
+
+;<Title> #tpl_p #Git
+
+; --- Body-meter -   -   -   <30 -  -  .  -  -  -<50 - - - . - - - - <70 ------.---------<90 ======.=========.=========<120+
+
+; - <Body0>
+; - <Body1>
+; - ...
+
+; How to Write a Git Commit Message: https://chris.beams.io/posts/git-commit/
+; 1. Separate subject from body with a blank line
+; 2. Capitalize the subject line
+; 3. Do not end the Title line with a period(dot)
+; 4. Use the imperative mood in the subject line
+; 5. Use the body to explain what and why vs. how
+;
+; Template source: @lisawolderiksen: https://gist.github.com/lisawolderiksen/a7b99d94c92c6671181611be1641c733

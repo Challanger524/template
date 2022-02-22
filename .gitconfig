@@ -5,6 +5,8 @@
 	path = .git-include/aliases/complex.sh
 [core]
 	commentChar = ";"
+[commit]
+	template = .git-include/commit.txt
 [submodule]
 	recurse = true
 [advice]
