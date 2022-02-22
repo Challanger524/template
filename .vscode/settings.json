@@ -1,0 +1,5 @@
+{
+	"editor.formatOnSaveMode": "modifications",
+	"editor.formatOnSave": true,
+	"diffEditor.ignoreTrimWhitespace": false,
+}

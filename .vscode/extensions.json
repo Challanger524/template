@@ -1,0 +1,15 @@
+{
+	"recommendations": [
+		"ms-vscode.cpptools", // Must Have ! ! !
+		"shardulm94.trailing-spaces", // Must Have ! ! !
+		"EditorConfig.EditorConfig", // Must Have ! ! !
+		"sidneys1.gitconfig"
+		//, "shd101wyy.markdown-preview-enhanced"
+		//, "formulahendry.code-runner"
+		//, "novemus.stack-scopes"
+		//, "twxs.cmake"
+		//, "ms-vscode.cmake-tools"
+		//, "ms-vscode-remote.remote-wsl"
+		//, "ms-vscode-remote.remote-ssh"
+	]
+}
