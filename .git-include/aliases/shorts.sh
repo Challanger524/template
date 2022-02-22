@@ -1,6 +1,6 @@
 [alias] # stripped shortcuts
-	s  = "status --short"
-	st = "status"
+	s  = "status --short --untracked-files"
+	st = "status --untracked-files"
 	b  = "branch"
 	bm = "branch --merged"
 	bn = "branch --no-merged"
