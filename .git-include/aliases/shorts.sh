@@ -7,5 +7,5 @@
 	u  = "add --update"
 
 [alias] # named shortcuts
-	aliaslist = "config --local --get-regexp --includes --name-only --show-origin alias" # print included aliases
-	ammend    = "commit --amend"
+	amend      = "commit --amend"
+	alias-list = "config --local --includes --name-only --get-regexp alias" # print included aliases
