@@ -1,0 +1,24 @@
+#!/bin/sh
+#
+# A hook script to check the commit log message taken by
+# applypatch from an e-mail message.
+# Example from: @pgilad https://gist.github.com/pgilad/5d7e4db725a906bd7aa7
+
+# Set this to your active development branch
+#develop_branch="develop"
+current_branch="$(git rev-parse --abbrev-ref HEAD)"
+
+echo    "Commit branch : $current_branch"
+echo -n "Commit message: "; cat "$1"
+
+## Regex to validate in commit msg # Plan: create one regex for each rule
+error_msg_gen_regex="ERR: Commit message: fail to regex:"
+
+# Capital first letter like: Add, Doc, Track, Adjust... (not: add, doc...)
+regex_first_capital='^[A-Z]'
+if ! grep -qE "$regex_first_capital" "$1"; then
+	echo "$error_msg_gen_regex '$regex_first_capital'" >&2
+	exit 1
+fi
+
+echo "Commit message: Status: Approved"

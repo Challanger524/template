@@ -5,6 +5,7 @@
 	path = .git-include/aliases/complex.sh
 [core]
 	commentChar = ";"
+	hooksPath   = .git-include/hooks/
 [commit]
 	template = .git-include/commit.txt
 [submodule]
