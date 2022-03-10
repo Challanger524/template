@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-#define PRAY "So say we all!" //! constexpr
+#define PRAY "So say we all!" // from "Battlestar Galactica (2003)" //! constexpr
 
 using namespace std; //! double evil - in header
 

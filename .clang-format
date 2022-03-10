@@ -1,48 +1,64 @@
 ﻿---
 ## General
 Language: Cpp
-BasedOnStyle: Microsoft
+#BasedOnStyle: Microsoft
+
+# Lint / limit
+IndentWidth: 4
+TabWidth: 4
+UseTab: Always
+ColumnLimit: 0 # disable frakin macro escaping (if long comment)
 
 ## Particular
 # Align
 AlignAfterOpenBracket: Align
-AlignConsecutiveMacros: 'true'
-AlignConsecutiveDeclarations: 'false'
+AlignConsecutiveMacros: Consecutive
+AlignConsecutiveDeclarations: false
 AlignEscapedNewlines: Left
-AlignOperands: 'true'
-AlignTrailingComments: 'true'
+AlignOperands: true
+AlignTrailingComments: true
 PointerAlignment: Right
 
 # Allow (*line)
-AllowAllArgumentsOnNextLine: 'false'
-AllowShortBlocksOnASingleLine: 'true'
-AllowShortCaseLabelsOnASingleLine: 'true'
+AllowAllArgumentsOnNextLine: false
+AllowShortBlocksOnASingleLine: true
+AllowShortCaseLabelsOnASingleLine: true
 AllowShortFunctionsOnASingleLine: All
 AllowShortIfStatementsOnASingleLine: Always
 AllowShortLambdasOnASingleLine: All
-AllowShortLoopsOnASingleLine: 'true'
+AllowShortLoopsOnASingleLine: true
 
 # Sort / other
-BinPackArguments:  'false'
-BinPackParameters: 'false'
-BreakAfterJavaFieldAnnotations: 'true'
-FixNamespaceComments: 'true'
+BinPackArguments:  false
+BinPackParameters: false
+FixNamespaceComments: true
 IncludeBlocks: Regroup
-SortUsingDeclarations: 'true'
-
-# Lint / limit
-TabWidth: '4'
-UseTab: Always
-#ColumnLimit: 0
+SortUsingDeclarations: true
+BreakBeforeBraces: Custom
+BraceWrapping:
+  #AfterFunction : true
+  BeforeElse    : true
+  BeforeCatch   : false
+  BeforeWhile   : false
+  BeforeLambdaBody: false
+  AfterCaseLabel: true
+  AfterNamespace: false
+  AfterStruct   : true
+  AfterClass    : true
+  SplitEmptyNamespace: false
+  SplitEmptyFunction: false
+  SplitEmptyRecord: false
+  IndentBraces: false
+#BreakAfterJavaFieldAnnotations: true
 
 # EmptyLine
-KeepEmptyLinesAtTheStartOfBlocks: 'false'
-MaxEmptyLinesToKeep: '2'
+KeepEmptyLinesAtTheStartOfBlocks: false
+MaxEmptyLinesToKeep: 2
 EmptyLineBeforeAccessModifier: LogicalBlock
 
 # Space
-SpaceBeforeCtorInitializerColon: 'true'
+SpaceBeforeCtorInitializerColon: true
 SpaceBeforeParens: ControlStatements
-SpaceBeforeRangeBasedForLoopColon: 'true'
+SpaceBeforeRangeBasedForLoopColon: true
 
 ...

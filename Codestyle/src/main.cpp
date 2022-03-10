@@ -6,12 +6,12 @@
 #include <iostream>
 #include <iterator>
 
+struct s { char byte; };
 
-int main()
-{
+int main() {
 	while (false) exit(1);
 
-	for (size_t i = 0; i < 1; i++) { GreetUser(PRAY); }
+	for (size_t i = 0; i < 1;i++) { GreetUser(PRAY); }
 }
 
 void GreetUser(const char *msg) { cout << msg << std::endl; }
