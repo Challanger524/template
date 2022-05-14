@@ -14,10 +14,10 @@ echo -n "Commit message: "; cat "$1"
 ## Regex to validate in commit msg # Plan: create one regex for each rule
 error_msg_gen_regex="ERR: Commit message: fail to regex:"
 
-# Capital first letter like: Add, Doc, Track, Adjust... (not: add, doc...)
-regex_first_capital='^[A-Z]'
-if ! grep -qE "$regex_first_capital" "$1"; then
-	echo "$error_msg_gen_regex '$regex_first_capital'" >&2
+# "<scope>: " up to 3 times + "<Summary>" with capital letter
+regex_first_capital='^([^:]*: ){1,3}[A-Z]'
+if ! head -n1 $1 | grep -qE "$regex_first_capital" ; then
+	echo "$error_msg_gen_regex head -n1 | grep '$regex_first_capital'" >&2
 	exit 1
 fi
 
